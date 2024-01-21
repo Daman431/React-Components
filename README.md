@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NextJS Common Components Library
+
+## Description
+
+This repository serves as a centralized hub for common React components designed for Next.js projects. Streamline your development process by leveraging a curated collection of reusable UI elements, ensuring consistency and efficiency across various projects.
+
+## Key Features
+
+- **Reusable Components:** A growing library of UI components that can be easily integrated into Next.js projects.
+- **Responsive Design:** Components are designed to be responsive and mobile-friendly out of the box.
+- **Documentation:** Comprehensive documentation guides developers on component usage and customization.
 
 ## Getting Started
 
-First, run the development server:
+1. **Clone the repository:** `git clone https://github.com/daman431/React-Components.git`
+2. **Explore the `components` directory:** Find a range of ready-to-use UI components.
+3. **Integrate components into your Next.js project:** Import them as needed.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Usage Example
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```javascript
+import { Button, Card, Navbar } from 'nextjs-common-components';
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+function MyComponent() {
+  return (
+    <div>
+      <Navbar title="My App" />
+      <Card>
+        <h2>Hello, World!</h2>
+        <p>This is a sample card using the common components.</p>
+        <Button label="Click me" onClick={() => console.log('Button clicked!')} />
+      </Card>
+    </div>
+  );
+}
