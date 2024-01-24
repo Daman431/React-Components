@@ -15,6 +15,7 @@ type Story = StoryObj<typeof TextField>;
 
 export const TextFieldExample: Story = {
     args: {
+        className: 'm-5',
     },
 };
     
